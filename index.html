@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <title>Document</title>
+</head>
+<style>
+  :root {
+    --twitter-blue: #00ACEE;
+    --github-grey: rgb(87, 86, 86);
+    --codepen-purple: rgb(138, 105, 201);
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400px;
+    padding: .35em;
+    border-radius: 5px;
+    box-shadow: 1em 1em 2em .25em rgba(0, 0, 0, .3);
+  }
+
+  .logo {
+    content: "";
+    width: 200px;
+    height: 50px;
+    background: black;
+    margin-right: 5px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+    gap: 2em;
+  }
+
+  .codepen,
+  .github,
+  .twitter {
+    color: black;
+  }
+
+  .codepen:hover {
+    color: var(--codepen-purple);
+  }
+
+  .github:hover {
+    color: var(--github-grey);
+  }
+
+  .twitter:hover {
+    color: var(--twitter-blue);
+  }
+
+  .text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: 10px;
+    font-size: 1em;
+  }
+
+  .text-container::after {
+    content: '';
+    margin-left: 213px;
+    border-left: solid 4px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    background: black;
+  }
+  .name{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(118, 173, 139);
+    
+  }
+  .title{
+    margin-top:0px;
+    font-weight:700;
+    
+  }
+  .contact-container{
+    padding-top: 8px;;
+  }
+  .contact-row-two a{
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <a href="https://www.victormikell.com">
+      <img src="./vmdc-logo.jpg" alt="" class="logo" />
+    </a>
+      <div class="social-links">
+        <a href="https://codepen.io/vmikell" target="_blank">
+          <i class="fab fa-codepen codepen"></i></a>
+        <a href="https://github.com/vmikell" target="_blank">
+          <i class="fab fa-github github"></i></a>
+        <a href="https://twitter.com/MikellVictor" target="_blank">
+          <i class="fab fa-twitter twitter"></i></a>
+      </div>
+    </div>
+    <div class="text-container">
+      <div class="name">
+        Victor Mikell
+      </div>
+      <div class="title">
+        <code>Frontend Developer</code>
+      </div>
+      <div class="contact-container">
+      <div class="contact-row-one">
+        <i class="fas fa-phone"></i><span> 646.208.8276</span>  
+      </div>
+      <div class="contact-row-two">
+      <a href="mailto:i.am@victormikell.com"></i><span><i class="far fa-envelope"></i>  i.am@victormikell.com</span></a>
+    </div> 
+  </div> 
+    </div>
+  </div>
+</body>
+
+</html>
